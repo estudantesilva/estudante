@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta chartset="UFT-8">
+      <meta nome="viewport" content="width=device-width. initial-scale=1.0">
+      <title> painel de Senhas</title>
+    </head>
+    <body>
+    {% for senha in senhas %}
+    <p>Senha: {{senha.senha}} - Status {{senha.fk_status_senha.nome}}</p>
+    {% endfor%}
+    <body>
+</html>
